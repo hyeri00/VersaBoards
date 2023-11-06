@@ -34,8 +34,8 @@ class GeneralBoardViewController: UIViewController {
         if let navigationBar = navigationController?.navigationBar {
             navigationBar.topItem?.title = "일반 게시판"
             navigationBar.titleTextAttributes = [
-                .font: UIFont.systemFont(ofSize: 16),
-                .foregroundColor: UIColor.black
+                .font: Font.Typography.medium16 as Any,
+                .foregroundColor: Colors.chocolate_700
             ]
         }
         
