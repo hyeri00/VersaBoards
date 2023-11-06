@@ -17,10 +17,11 @@
 		1C380F682AF8B8EF0036A2D1 /* GeneralBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F672AF8B8EF0036A2D1 /* GeneralBoardView.swift */; };
 		1C380F6C2AF8DB640036A2D1 /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F6B2AF8DB640036A2D1 /* IconImage.swift */; };
 		1C380F742AF8EE940036A2D1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F732AF8EE940036A2D1 /* Colors.swift */; };
-		1C380F7A2AF91D540036A2D1 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F762AF91D530036A2D1 /* SpoqaHanSansNeo-Light.ttf */; };
-		1C380F7B2AF91D540036A2D1 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F772AF91D530036A2D1 /* SpoqaHanSansNeo-Bold.ttf */; };
-		1C380F7C2AF91D540036A2D1 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F782AF91D540036A2D1 /* SpoqaHanSansNeo-Medium.ttf */; };
-		1C380F7D2AF91D540036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F792AF91D540036A2D1 /* SpoqaHanSansNeo-Regular.ttf */; };
+		1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F7E2AF91DB90036A2D1 /* Typography.swift */; };
+		1C380F852AF92BBC0036A2D1 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F812AF92BBB0036A2D1 /* SpoqaHanSansNeo-Medium.ttf */; };
+		1C380F862AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F822AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf */; };
+		1C380F872AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F832AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf */; };
+		1C380F882AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +37,11 @@
 		1C380F672AF8B8EF0036A2D1 /* GeneralBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardView.swift; sourceTree = "<group>"; };
 		1C380F6B2AF8DB640036A2D1 /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
 		1C380F732AF8EE940036A2D1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		1C380F762AF91D530036A2D1 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
-		1C380F772AF91D530036A2D1 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
-		1C380F782AF91D540036A2D1 /* SpoqaHanSansNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.ttf"; sourceTree = "<group>"; };
-		1C380F792AF91D540036A2D1 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
+		1C380F7E2AF91DB90036A2D1 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		1C380F812AF92BBB0036A2D1 /* SpoqaHanSansNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.ttf"; sourceTree = "<group>"; };
+		1C380F822AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
+		1C380F832AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
+		1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				1C380F732AF8EE940036A2D1 /* Colors.swift */,
 				1C380F6B2AF8DB640036A2D1 /* IconImage.swift */,
+				1C380F7E2AF91DB90036A2D1 /* Typography.swift */,
 			);
 			path = Values;
 			sourceTree = "<group>";
@@ -123,10 +126,10 @@
 		1C380F752AF91D480036A2D1 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				1C380F772AF91D530036A2D1 /* SpoqaHanSansNeo-Bold.ttf */,
-				1C380F762AF91D530036A2D1 /* SpoqaHanSansNeo-Light.ttf */,
-				1C380F782AF91D540036A2D1 /* SpoqaHanSansNeo-Medium.ttf */,
-				1C380F792AF91D540036A2D1 /* SpoqaHanSansNeo-Regular.ttf */,
+				1C380F832AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf */,
+				1C380F822AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf */,
+				1C380F812AF92BBB0036A2D1 /* SpoqaHanSansNeo-Medium.ttf */,
+				1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -189,12 +192,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C380F7C2AF91D540036A2D1 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
-				1C380F7D2AF91D540036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
-				1C380F7A2AF91D540036A2D1 /* SpoqaHanSansNeo-Light.ttf in Resources */,
-				1C380F7B2AF91D540036A2D1 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
+				1C380F862AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf in Resources */,
+				1C380F882AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				1C380F5C2AF8AEC50036A2D1 /* LaunchScreen.storyboard in Resources */,
 				1C380F592AF8AEC50036A2D1 /* Assets.xcassets in Resources */,
+				1C380F852AF92BBC0036A2D1 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
+				1C380F872AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
 				1C380F572AF8AEC40036A2D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +211,7 @@
 			files = (
 				1C380F6C2AF8DB640036A2D1 /* IconImage.swift in Sources */,
 				1C380F652AF8B01A0036A2D1 /* GeneralBoardViewController.swift in Sources */,
+				1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */,
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
 				1C380F742AF8EE940036A2D1 /* Colors.swift in Sources */,
 				1C380F682AF8B8EF0036A2D1 /* GeneralBoardView.swift in Sources */,
