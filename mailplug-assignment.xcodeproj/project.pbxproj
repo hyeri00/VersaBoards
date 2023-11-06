@@ -22,6 +22,7 @@
 		1C380F862AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F822AF92BBC0036A2D1 /* SpoqaHanSansNeo-Light.ttf */; };
 		1C380F872AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F832AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf */; };
 		1C380F882AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */; };
+		1C380F922AF93D120036A2D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C380F912AF93D120036A2D1 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C380F922AF93D120036A2D1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,9 @@
 			dependencies = (
 			);
 			name = "mailplug-assignment";
+			packageProductDependencies = (
+				1C380F912AF93D120036A2D1 /* SnapKit */,
+			);
 			productName = "mailplug-assignment";
 			productReference = 1C380F4C2AF8AEC40036A2D1 /* mailplug-assignment.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +191,9 @@
 				Base,
 			);
 			mainGroup = 1C380F432AF8AEC40036A2D1;
+			packageReferences = (
+				1C380F902AF93D120036A2D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1C380F4D2AF8AEC40036A2D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -442,6 +450,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C380F902AF93D120036A2D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C380F912AF93D120036A2D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C380F902AF93D120036A2D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C380F442AF8AEC40036A2D1 /* Project object */;
 }
