@@ -11,12 +11,29 @@ enum IconImage {
     case menuBar
     case searchBar
     
+    case attachment
+    case badge_new
+    case badge_notice
+    case badge_re
+    case eye
+    
     var image: UIImage? {
         switch self {
         case .menuBar:
-            return UIImage(named: "hamburger menu")
+            return UIImage(named: "hamburgerMenu")
         case .searchBar:
-            return UIImage(named: "MagnifyingGlass")
+            return UIImage(named: "magnifyingGlass")
+            
+        case .attachment:
+            return UIImage(named: "attachment")
+        case .badge_new:
+            return UIImage(named: "badge_new")
+        case .badge_notice:
+            return UIImage(named: "badge_notice")
+        case .badge_re:
+            return UIImage(named: "badge_re")
+        case .eye:
+            return UIImage(named: "eye")
         }
     }
 }
