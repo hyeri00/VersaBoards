@@ -90,8 +90,7 @@
 		1C380F632AF8AFB20036A2D1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1C380F642AF8B01A0036A2D1 /* GeneralBoardViewController.swift */,
-				1C380F662AF8B8DE0036A2D1 /* Views */,
+				1C380F892AF93A100036A2D1 /* GeneralBoard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -132,6 +131,15 @@
 				1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		1C380F892AF93A100036A2D1 /* GeneralBoard */ = {
+			isa = PBXGroup;
+			children = (
+				1C380F642AF8B01A0036A2D1 /* GeneralBoardViewController.swift */,
+				1C380F662AF8B8DE0036A2D1 /* Views */,
+			);
+			path = GeneralBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
