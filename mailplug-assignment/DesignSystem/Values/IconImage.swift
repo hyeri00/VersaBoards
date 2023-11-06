@@ -17,6 +17,8 @@ enum IconImage {
     case badge_re
     case eye
     
+    case close
+    
     var image: UIImage? {
         switch self {
         case .menuBar:
@@ -34,6 +36,9 @@ enum IconImage {
             return UIImage(named: "badge_re")
         case .eye:
             return UIImage(named: "eye")
+            
+        case .close:
+            return UIImage(named: "close")
         }
     }
 }
