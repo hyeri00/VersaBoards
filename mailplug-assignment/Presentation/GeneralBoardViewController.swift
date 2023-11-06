@@ -9,6 +9,14 @@ import UIKit
 
 class GeneralBoardViewController: UIViewController {
     
+    private let generalBoardView = GeneralBoardView()
+    
+    // MARK: - Life Cycles
+    
+    override func loadView() {
+        self.view = generalBoardView
+    }
+    
     // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
