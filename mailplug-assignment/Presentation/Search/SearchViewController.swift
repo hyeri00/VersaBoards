@@ -33,6 +33,10 @@ class SearchViewController: UIViewController {
         return tableView
     }()
     
+    // MARK: - Search Results
+    
+    var searchResults: [(String, String)] = []
+    
     // MARK: - ViewDidLoad
     
     override func viewDidLoad() {
@@ -44,7 +48,11 @@ class SearchViewController: UIViewController {
     // MARK: - Configure
     
     private func configure() {
-        view.backgroundColor = Colors.grey_100
+        view.backgroundColor = .white
+        
+        searchBar.delegate = self
+        
+        makeConstraints()
     }
     
     private func makeConstraints() {
@@ -61,4 +69,28 @@ class SearchViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
     }
+    
+    private func showSearchResult(searchText: String) -> [(String, String)] {
+        var results: [(String, String)] = []
+        
+        let titleFields = ["전체", "제목", "내용", "작성자"]
+        
+        for field in titleFields {
+            results.append((field, searchText))
+        }
+        return results
+    }
+}
+
+// MARK: - SearchBarDelegate
+
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBar(
+        _ searchBar: UISearchBar,
+        textDidChange searchText: String) {
+            
+            searchResults = showSearchResult(searchText: searchText)
+            resultTableView.reloadData()
+        }
 }
