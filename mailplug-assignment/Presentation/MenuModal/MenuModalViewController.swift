@@ -18,7 +18,7 @@ class MenuModalViewController: UIViewController {
         button.setImage(image.image, for: .normal)
         return button
     }()
-
+    
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "게시판"
@@ -55,5 +55,52 @@ class MenuModalViewController: UIViewController {
     
     private func configure() {
         view.backgroundColor = .white
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
+}
+
+// MARK: - TableViewDelegate, TableViewDataSource
+
+extension MenuModalViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+            return MenuOptions.allCases.count
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuModalTableViewCell",
+                                                     for: indexPath) as! MenuModalTableViewCell
+            let menuOption = MenuOptions(rawValue: indexPath.row)
+            cell.menuLabel.text = menuOption?.sideMenuLabel
+            
+            return cell
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath) {
+            
+            switch indexPath.row {
+            case 0:
+                dismiss(animated: true)
+            case 1:
+                // TODO: - 익명 게시판
+                break
+            case 2:
+                // TODO: - 공지 게시판
+                break
+            case 3:
+                // TODO: - 자유 게시판
+                break
+            default:
+                break
+            }
+        }
 }
