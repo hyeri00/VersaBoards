@@ -10,12 +10,16 @@ import SnapKit
 
 class MenuModalTableViewCell: UITableViewCell {
     
+    // MARK: - UI
+    
     let menuLabel: UILabel = {
         let label = UILabel()
         label.textColor = Colors.chocolate_700
         label.font = Font.Typography.regular16
         return label
     }()
+    
+    // MARK: - Init
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,6 +30,8 @@ class MenuModalTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Configure
     
     private func configure() {
         self.backgroundColor = .white
