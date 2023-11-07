@@ -76,6 +76,7 @@
 		1C380F4E2AF8AEC40036A2D1 /* mailplug-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1C380F972AFA0F090036A2D1 /* Domain */,
 				1C380F632AF8AFB20036A2D1 /* Presentation */,
 				1C380F692AF8DA470036A2D1 /* DesignSystem */,
 				1C380F4F2AF8AEC40036A2D1 /* AppDelegate.swift */,
@@ -92,6 +93,7 @@
 		1C380F632AF8AFB20036A2D1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1C380F932AF93D420036A2D1 /* MenuModal */,
 				1C380F892AF93A100036A2D1 /* GeneralBoard */,
 			);
 			path = Presentation;
@@ -142,6 +144,36 @@
 				1C380F662AF8B8DE0036A2D1 /* Views */,
 			);
 			path = GeneralBoard;
+			sourceTree = "<group>";
+		};
+		1C380F932AF93D420036A2D1 /* MenuModal */ = {
+			isa = PBXGroup;
+			children = (
+				1C380F962AFA0DA20036A2D1 /* Views */,
+			);
+			path = MenuModal;
+			sourceTree = "<group>";
+		};
+		1C380F962AFA0DA20036A2D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C380F972AFA0F090036A2D1 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1C380F982AFA0F2D0036A2D1 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1C380F982AFA0F2D0036A2D1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
