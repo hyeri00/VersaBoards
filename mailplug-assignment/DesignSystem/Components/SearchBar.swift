@@ -23,7 +23,18 @@ class SearchBar: UISearchBar {
         self.layer.cornerRadius = 4
         self.searchBarStyle = .minimal
         
+        setCancelButton()
         setColors()
+    }
+    
+    private func setCancelButton() {
+        setShowsCancelButton(true, animated: false)
+        
+        if let cancelButton = self.value(forKey: "cancelButton") as? UIButton {
+            cancelButton.setTitle("취소", for: .normal)
+            cancelButton.setTitleColor(Colors.grey_600, for: .normal)
+            cancelButton.titleLabel?.font = Font.Typography.regular16
+        }
     }
     
     private func setColors() {
