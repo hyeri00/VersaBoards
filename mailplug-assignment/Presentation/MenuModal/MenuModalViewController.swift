@@ -60,6 +60,7 @@ class MenuModalViewController: UIViewController {
         super.viewDidLoad()
         
         configure()
+        addAction()
     }
     
     // MARK: - Configure
@@ -71,6 +72,12 @@ class MenuModalViewController: UIViewController {
         tableView.dataSource = self
         
         makeConstraints()
+    }
+    
+    private func addAction() {
+        self.closeButton.addAction(UIAction(handler: { [self] _ in
+            dismiss(animated: true)
+        }), for: .touchUpInside)
     }
     
     private func makeConstraints() {
