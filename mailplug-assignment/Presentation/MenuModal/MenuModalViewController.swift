@@ -18,6 +18,7 @@ class MenuModalViewController: UIViewController {
         static let buttonSize: CGFloat = 24
         static let titleTopMargin: CGFloat = 25
         static let itemSpacing: CGFloat = 20
+        static let tableViewTopMargin: CGFloat = 10
         static let separatorThickness: CGFloat = 2
     }
     
@@ -104,7 +105,7 @@ class MenuModalViewController: UIViewController {
         }
         
         self.tableView.snp.makeConstraints {
-            $0.top.equalTo(separatorView.snp.bottom).offset(Metric.itemSpacing)
+            $0.top.equalTo(separatorView.snp.bottom).offset(Metric.tableViewTopMargin)
             $0.leading.trailing.bottom.equalToSuperview()
         }
     }
