@@ -16,7 +16,7 @@ class SearchViewController: UIViewController {
         static let topMargin: CGFloat = 10
         static let searchBarLeftRightMargin: CGFloat = 15
     }
-
+    
     // MARK: - UI
     
     private let searchBar: SearchBar = {
@@ -51,6 +51,8 @@ class SearchViewController: UIViewController {
         view.backgroundColor = .white
         
         searchBar.delegate = self
+        resultTableView.delegate = self
+        resultTableView.dataSource = self
         
         makeConstraints()
     }
@@ -82,9 +84,9 @@ class SearchViewController: UIViewController {
     }
 }
 
-// MARK: - SearchBarDelegate
+// MARK: - SearchBarDelegate, TableViewDataSource, TableViewDelegate
 
-extension SearchViewController: UISearchBarDelegate {
+extension SearchViewController: UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
     
     func searchBar(
         _ searchBar: UISearchBar,
@@ -92,5 +94,24 @@ extension SearchViewController: UISearchBarDelegate {
             
             searchResults = showSearchResult(searchText: searchText)
             resultTableView.reloadData()
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+            return searchResults.count
+        }
+    
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell",
+                                                     for: indexPath) as! SearchResultTableViewCell
+            
+            let (key, value) = searchResults[indexPath.row]
+            cell.titleLabel.text = "\(key): \(value)"
+            cell.accessoryType = .disclosureIndicator
+            return cell
         }
 }
