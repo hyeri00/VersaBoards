@@ -24,6 +24,7 @@
 		1C380F882AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */; };
 		1C380F922AF93D120036A2D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C380F912AF93D120036A2D1 /* SnapKit */; };
 		1C380F9A2AFA0F5E0036A2D1 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F992AFA0F5E0036A2D1 /* MenuOptions.swift */; };
+		1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		1C380F832AF92BBC0036A2D1 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
 		1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
 		1C380F992AFA0F5E0036A2D1 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
+		1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModalTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		1C380F962AFA0DA20036A2D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				1C380F652AF8B01A0036A2D1 /* GeneralBoardViewController.swift in Sources */,
 				1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */,
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
+				1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */,
 				1C380F742AF8EE940036A2D1 /* Colors.swift in Sources */,
 				1C380F682AF8B8EF0036A2D1 /* GeneralBoardView.swift in Sources */,
 				1C380F502AF8AEC40036A2D1 /* AppDelegate.swift in Sources */,
