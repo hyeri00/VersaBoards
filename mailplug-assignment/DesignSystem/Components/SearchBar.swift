@@ -22,5 +22,12 @@ class SearchBar: UISearchBar {
     private func configureDefault() {
         self.layer.cornerRadius = 4
         self.searchBarStyle = .minimal
+        
+        setColors()
     }
+    
+    private func setColors() {
+         self.tintColor = Colors.chocolate_700
+         self.backgroundColor = .white
+     }
 }
