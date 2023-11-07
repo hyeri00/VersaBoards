@@ -49,7 +49,9 @@ class GeneralBoardViewController: UIViewController {
     
     @objc
     private func showMenuBar() {
-        // TODO - menuBar 보여주기
+        let modalVC = MenuModalViewController()
+        modalVC.modalPresentationStyle = .formSheet
+        self.present(modalVC, animated: true)
     }
     
     @objc
