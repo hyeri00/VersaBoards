@@ -36,5 +36,16 @@ class SearchResultTableViewCell: UITableViewCell {
     private func configure() {
         self.backgroundColor = .white
         self.selectionStyle = .none
+        
+        makeConstraints()
+    }
+    
+    private func makeConstraints() {
+        self.addSubview(self.titleLabel)
+        
+        self.titleLabel.snp.makeConstraints {
+            $0.leading.equalTo(20)
+            $0.centerY.equalToSuperview()
+        }
     }
 }
