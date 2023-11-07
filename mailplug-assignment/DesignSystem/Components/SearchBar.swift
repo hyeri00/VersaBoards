@@ -23,8 +23,25 @@ class SearchBar: UISearchBar {
         self.layer.cornerRadius = 4
         self.searchBarStyle = .minimal
         
+        setPlaceHolder()
         setCancelButton()
         setColors()
+    }
+    
+    private func setPlaceHolder() {
+        if let textField = self.value(forKey: "searchField") as? UITextField {
+            let placeholderAttributes: [NSAttributedString.Key: Any] = [
+                .font: Font.Typography.regular16 as Any,
+                .foregroundColor: Colors.grey_400
+            ]
+            
+            let attributedPlaceholder = NSAttributedString(
+                string: "일반 게시판에서 검색",
+                attributes: placeholderAttributes
+            )
+            
+            textField.attributedPlaceholder = attributedPlaceholder
+        }
     }
     
     private func setCancelButton() {
