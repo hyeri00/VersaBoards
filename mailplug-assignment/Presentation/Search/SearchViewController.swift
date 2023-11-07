@@ -25,4 +25,18 @@ class SearchViewController: UIViewController {
                            forCellReuseIdentifier: "SearchResultTableViewCell")
         return tableView
     }()
+    
+    // MARK: - ViewDidLoad
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configure()
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        view.backgroundColor = Colors.grey_100
+    }
 }
