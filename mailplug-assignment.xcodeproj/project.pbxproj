@@ -63,6 +63,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3154232AFA65A000573B3A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1C380F432AF8AEC40036A2D1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +123,9 @@
 		1C380F692AF8DA470036A2D1 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				1C380F752AF91D480036A2D1 /* Font */,
+				1C3154232AFA65A000573B3A /* Components */,
 				1C380F6A2AF8DA9D0036A2D1 /* Values */,
+				1C380F752AF91D480036A2D1 /* Font */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
