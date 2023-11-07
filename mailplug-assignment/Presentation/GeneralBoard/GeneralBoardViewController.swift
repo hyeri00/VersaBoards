@@ -56,6 +56,8 @@ class GeneralBoardViewController: UIViewController {
     
     @objc
     private func showSearchBar() {
-        // TODO - searchBar 보여주기
+        let searchVC = SearchViewController()
+        searchVC.modalPresentationStyle = .overFullScreen
+        self.present(searchVC, animated: true)
     }
 }
