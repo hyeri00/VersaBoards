@@ -10,6 +10,12 @@ import SnapKit
 
 class MenuModalTableViewCell: UITableViewCell {
     
+    // MARK: - Metric
+    
+    enum Metric {
+        static let leadingMargin: CGFloat = 20
+    }
+    
     // MARK: - UI
     
     let menuLabel: UILabel = {
@@ -44,7 +50,8 @@ class MenuModalTableViewCell: UITableViewCell {
         self.addSubview(self.menuLabel)
         
         self.menuLabel.snp.makeConstraints {
-            $0.leading.equalTo(20)
+            $0.leading.equalTo(Metric.leadingMargin)
+            $0.centerY.equalToSuperview()
         }
     }
 }
