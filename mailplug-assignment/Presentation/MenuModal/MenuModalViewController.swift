@@ -42,4 +42,18 @@ class MenuModalViewController: UIViewController {
                            forCellReuseIdentifier: "MenuModalTableViewCell")
         return tableView
     }()
+    
+    // MARK: - ViewDidLoad
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configure()
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        view.backgroundColor = .white
+    }
 }
