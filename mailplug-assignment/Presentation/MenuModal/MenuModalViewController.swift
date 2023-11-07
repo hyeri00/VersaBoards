@@ -10,6 +10,17 @@ import SnapKit
 
 class MenuModalViewController: UIViewController {
     
+    // MARK: - Metric
+    
+    enum Metric {
+        static let topMargin: CGFloat = 20
+        static let leftRightMargin: CGFloat = 24
+        static let buttonSize: CGFloat = 24
+        static let titleTopMargin: CGFloat = 25
+        static let itemSpacing: CGFloat = 20
+        static let separatorThickness: CGFloat = 2
+    }
+    
     // MARK: - UI
     
     private let closeButton: UIButton = {
@@ -58,6 +69,37 @@ class MenuModalViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        makeConstraints()
+    }
+    
+    private func makeConstraints() {
+        self.view.addSubview(self.closeButton)
+        self.view.addSubview(self.titleLabel)
+        self.view.addSubview(self.separatorView)
+        self.view.addSubview(self.tableView)
+        
+        self.closeButton.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(Metric.topMargin)
+            $0.leading.equalTo(Metric.leftRightMargin)
+            $0.width.height.equalTo(Metric.buttonSize)
+        }
+        
+        self.titleLabel.snp.makeConstraints {
+            $0.top.equalTo(closeButton.snp.bottom).offset(Metric.titleTopMargin)
+            $0.leading.equalTo(Metric.leftRightMargin)
+        }
+        
+        self.separatorView.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(Metric.itemSpacing)
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(Metric.separatorThickness)
+        }
+        
+        self.tableView.snp.makeConstraints {
+            $0.top.equalTo(separatorView.snp.bottom).offset(Metric.itemSpacing)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
     }
 }
 
