@@ -25,6 +25,7 @@
 		1C380F922AF93D120036A2D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1C380F912AF93D120036A2D1 /* SnapKit */; };
 		1C380F9A2AFA0F5E0036A2D1 /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F992AFA0F5E0036A2D1 /* MenuOptions.swift */; };
 		1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */; };
+		1C380F9E2AFA11700036A2D1 /* MenuModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F9D2AFA11700036A2D1 /* MenuModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		1C380F842AF92BBC0036A2D1 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
 		1C380F992AFA0F5E0036A2D1 /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
 		1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModalTableViewCell.swift; sourceTree = "<group>"; };
+		1C380F9D2AFA11700036A2D1 /* MenuModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		1C380F932AF93D420036A2D1 /* MenuModal */ = {
 			isa = PBXGroup;
 			children = (
+				1C380F9D2AFA11700036A2D1 /* MenuModalViewController.swift */,
 				1C380F962AFA0DA20036A2D1 /* Views */,
 			);
 			path = MenuModal;
@@ -272,6 +275,7 @@
 				1C380F682AF8B8EF0036A2D1 /* GeneralBoardView.swift in Sources */,
 				1C380F502AF8AEC40036A2D1 /* AppDelegate.swift in Sources */,
 				1C380F522AF8AEC40036A2D1 /* SceneDelegate.swift in Sources */,
+				1C380F9E2AFA11700036A2D1 /* MenuModalViewController.swift in Sources */,
 				1C380F9A2AFA0F5E0036A2D1 /* MenuOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
