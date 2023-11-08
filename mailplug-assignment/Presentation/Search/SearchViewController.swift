@@ -114,7 +114,17 @@ extension SearchViewController: UISearchBarDelegate, UITableViewDataSource, UITa
                                                      for: indexPath) as! SearchResultTableViewCell
             
             let (key, value) = searchResults[indexPath.row]
-            cell.titleLabel.text = "\(key): \(value)"
+            
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: Font.Typography.regular16 as Any,
+                .foregroundColor: Colors.chocolate_700
+            ]
+            
+            let attributedValue = NSAttributedString(string: value, attributes: attributes)
+            let attributedText = NSMutableAttributedString(string: "\(key): ")
+            attributedText.append(attributedValue)
+            
+            cell.titleLabel.attributedText = attributedText
             cell.accessoryType = .disclosureIndicator
             return cell
         }
