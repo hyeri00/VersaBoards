@@ -55,7 +55,7 @@ class SearchBar: UISearchBar {
     }
     
     private func setColors() {
-         self.tintColor = Colors.chocolate_700
-         self.backgroundColor = .white
-     }
+        self.tintColor = Colors.chocolate_700
+        self.backgroundColor = .white
+    }
 }

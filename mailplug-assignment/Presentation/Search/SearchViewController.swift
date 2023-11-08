@@ -96,6 +96,10 @@ extension SearchViewController: UISearchBarDelegate, UITableViewDataSource, UITa
             resultTableView.reloadData()
         }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.dismiss(animated: true)
+    }
+    
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
