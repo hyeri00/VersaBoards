@@ -33,9 +33,9 @@ class SearchViewController: UIViewController {
         return tableView
     }()
     
-    // MARK: - Search Results
+    // MARK: - ViewModel
     
-    var searchResults: [(String, String)] = []
+    private let viewModel = SearchViewModel()
     
     // MARK: - ViewDidLoad
     
@@ -71,39 +71,35 @@ class SearchViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
     }
-    
-    private func showSearchResult(searchText: String) -> [(String, String)] {
-        var results: [(String, String)] = []
-        
-        let titleFields = ["전체", "제목", "내용", "작성자"]
-        
-        for field in titleFields {
-            results.append((field, searchText))
-        }
-        return results
-    }
 }
 
-// MARK: - SearchBarDelegate, TableViewDataSource, TableViewDelegate
+// MARK: - SearchBarDelegate
 
-extension SearchViewController: UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate {
+extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(
         _ searchBar: UISearchBar,
         textDidChange searchText: String) {
             
-            searchResults = showSearchResult(searchText: searchText)
+            viewModel.performSearch(searchText: searchText)
             resultTableView.reloadData()
         }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.dismiss(animated: true)
-    }
+    func searchBarCancelButtonClicked(
+        _ searchBar: UISearchBar) {
+            
+            self.dismiss(animated: true)
+        }
+}
+
+// MARK: - TableViewDelegate, TableViewDataSource
+
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return searchResults.count
+            return viewModel.numberOfResults()
         }
     
     func tableView(
@@ -113,18 +109,18 @@ extension SearchViewController: UISearchBarDelegate, UITableViewDataSource, UITa
             let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultTableViewCell",
                                                      for: indexPath) as! SearchResultTableViewCell
             
-            let (key, value) = searchResults[indexPath.row]
+            if let result = viewModel.resultAtIndex(indexPath.row) {
+                let attributedTitle = NSAttributedString(string: "\(result.title): ")
+                let attributedText = NSAttributedString(string: result.keyword,
+                                                        attributes: [.font: Font.Typography.regular16 as Any,
+                                                                     .foregroundColor: Colors.chocolate_700])
+                let attributedString = NSMutableAttributedString()
+                attributedString.append(attributedTitle)
+                attributedString.append(attributedText)
+                
+                cell.titleLabel.attributedText = attributedString
+            }
             
-            let attributes: [NSAttributedString.Key: Any] = [
-                .font: Font.Typography.regular16 as Any,
-                .foregroundColor: Colors.chocolate_700
-            ]
-            
-            let attributedValue = NSAttributedString(string: value, attributes: attributes)
-            let attributedText = NSMutableAttributedString(string: "\(key): ")
-            attributedText.append(attributedValue)
-            
-            cell.titleLabel.attributedText = attributedText
             cell.accessoryType = .disclosureIndicator
             return cell
         }
