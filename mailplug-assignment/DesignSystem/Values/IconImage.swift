@@ -18,6 +18,7 @@ enum IconImage {
     case eye
     
     case close
+    case recent
     
     var image: UIImage? {
         switch self {
@@ -39,6 +40,8 @@ enum IconImage {
             
         case .close:
             return UIImage(named: "close")
+        case .recent:
+            return UIImage(named: "recent")
         }
     }
 }
