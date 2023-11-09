@@ -71,6 +71,14 @@ class SearchViewController: UIViewController {
             $0.leading.trailing.bottom.equalToSuperview()
         }
     }
+    
+    private func emptyState() {
+        resultTableView.isHidden = true
+    }
+    
+    private func fillState() {
+        resultTableView.isHidden = false
+    }
 }
 
 // MARK: - SearchBarDelegate
@@ -83,6 +91,12 @@ extension SearchViewController: UISearchBarDelegate {
             
             viewModel.performSearch(searchText: searchText)
             resultTableView.reloadData()
+            
+            if searchText.isEmpty {
+                emptyState()
+            } else {
+                fillState()
+            }
         }
     
     func searchBarCancelButtonClicked(
