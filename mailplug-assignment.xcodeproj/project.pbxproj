@@ -30,6 +30,7 @@
 		1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */; };
 		1C380F9E2AFA11700036A2D1 /* MenuModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C380F9D2AFA11700036A2D1 /* MenuModalViewController.swift */; };
 		1C72CB802AFCB9AF002DA0D7 /* SearchTextDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB7F2AFCB9AF002DA0D7 /* SearchTextDTO.swift */; };
+		1C72CB832AFCCB18002DA0D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1C380F9B2AFA10800036A2D1 /* MenuModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModalTableViewCell.swift; sourceTree = "<group>"; };
 		1C380F9D2AFA11700036A2D1 /* MenuModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModalViewController.swift; sourceTree = "<group>"; };
 		1C72CB7F2AFCB9AF002DA0D7 /* SearchTextDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextDTO.swift; sourceTree = "<group>"; };
+		1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		1C380F4E2AF8AEC40036A2D1 /* mailplug-assignment */ = {
 			isa = PBXGroup;
 			children = (
+				1C72CB812AFCCB0A002DA0D7 /* ViewModel */,
 				1C380F632AF8AFB20036A2D1 /* Presentation */,
 				1C72CB7D2AFCB983002DA0D7 /* Repository */,
 				1C380F972AFA0F090036A2D1 /* Domain */,
@@ -237,6 +240,14 @@
 			path = DTO;
 			sourceTree = "<group>";
 		};
+		1C72CB812AFCCB0A002DA0D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +331,7 @@
 			files = (
 				1C380F6C2AF8DB640036A2D1 /* IconImage.swift in Sources */,
 				1C380F652AF8B01A0036A2D1 /* GeneralBoardViewController.swift in Sources */,
+				1C72CB832AFCCB18002DA0D7 /* SearchViewModel.swift in Sources */,
 				1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */,
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
 				1C72CB802AFCB9AF002DA0D7 /* SearchTextDTO.swift in Sources */,
