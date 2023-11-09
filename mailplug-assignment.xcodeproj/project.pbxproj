@@ -80,8 +80,8 @@
 		1C3154282AFA6C6C00573B3A /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				1C3154292AFA6C9100573B3A /* Views */,
 				1C31542C2AFA6D3C00573B3A /* SearchViewController.swift */,
+				1C3154292AFA6C9100573B3A /* Views */,
 			);
 			path = Search;
 			sourceTree = "<group>";
