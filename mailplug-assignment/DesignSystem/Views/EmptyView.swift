@@ -17,12 +17,12 @@ class EmptyView: UIView {
     
     // MARK: - UI
     
-    private let titleImage: UIImageView = {
+    let titleImage: UIImageView = {
         let image = UIImageView()
         return image
     }()
     
-    private let titleLabel: UILabel = {
+    let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = Colors.grey_600
         label.font = Font.Typography.regular14
