@@ -35,6 +35,7 @@
 		1C72CB8C2AFD3481002DA0D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1C72CB8B2AFD3481002DA0D7 /* Alamofire */; };
 		1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */; };
 		1C72CB902AFE3253002DA0D7 /* EmptySearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB8F2AFE3253002DA0D7 /* EmptySearchResultView.swift */; };
+		1C72CB922AFE32CB002DA0D7 /* EmptySearchRecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		1C72CB882AFD1ABC002DA0D7 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBoardView.swift; sourceTree = "<group>"; };
 		1C72CB8F2AFE3253002DA0D7 /* EmptySearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchResultView.swift; sourceTree = "<group>"; };
+		1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchRecentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				1C31542A2AFA6CA500573B3A /* SearchResultTableViewCell.swift */,
 				1C72CB8F2AFE3253002DA0D7 /* EmptySearchResultView.swift */,
+				1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				1C380F682AF8B8EF0036A2D1 /* GeneralBoardView.swift in Sources */,
 				1C31542D2AFA6D3C00573B3A /* SearchViewController.swift in Sources */,
 				1C380F502AF8AEC40036A2D1 /* AppDelegate.swift in Sources */,
+				1C72CB922AFE32CB002DA0D7 /* EmptySearchRecentView.swift in Sources */,
 				1C380F522AF8AEC40036A2D1 /* SceneDelegate.swift in Sources */,
 				1C380F9E2AFA11700036A2D1 /* MenuModalViewController.swift in Sources */,
 				1C31542B2AFA6CA500573B3A /* SearchResultTableViewCell.swift in Sources */,
