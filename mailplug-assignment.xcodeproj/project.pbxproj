@@ -33,6 +33,7 @@
 		1C72CB832AFCCB18002DA0D7 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */; };
 		1C72CB892AFD1ABC002DA0D7 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB882AFD1ABC002DA0D7 /* EmptyView.swift */; };
 		1C72CB8C2AFD3481002DA0D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1C72CB8B2AFD3481002DA0D7 /* Alamofire */; };
+		1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		1C72CB7F2AFCB9AF002DA0D7 /* SearchResultDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDTO.swift; sourceTree = "<group>"; };
 		1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1C72CB882AFD1ABC002DA0D7 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1C380F672AF8B8EF0036A2D1 /* GeneralBoardView.swift */,
+				1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				1C72CB832AFCCB18002DA0D7 /* SearchViewModel.swift in Sources */,
 				1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */,
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
+				1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */,
 				1C72CB802AFCB9AF002DA0D7 /* SearchResultDTO.swift in Sources */,
 				1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */,
 				1C72CB892AFD1ABC002DA0D7 /* EmptyView.swift in Sources */,
