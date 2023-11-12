@@ -9,6 +9,7 @@ import UIKit
 
 class GeneralBoardViewController: UIViewController {
     
+    private let viewModel = GeneralBoardViewModel()
     private let generalBoardView = GeneralBoardView()
     
     // MARK: - UI
@@ -38,8 +39,23 @@ class GeneralBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchPosts()
         configure()
         setNavigationBar()
+    }
+    
+    private func fetchPosts() {
+        viewModel.fetchPosts { [weak self] error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("Error: \(error)")
+            } else {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+        }
     }
     
     private func configure() {
@@ -105,7 +121,7 @@ extension GeneralBoardViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(
         _ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return 1
+            return viewModel.boards.count
         }
     
     
@@ -115,6 +131,15 @@ extension GeneralBoardViewController: UITableViewDataSource, UITableViewDelegate
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "GeneralBoardTableViewCell",
                                                      for: indexPath) as! GeneralBoardTableViewCell
+            let board = viewModel.boards[indexPath.row]
+            
+            cell.titleLabel.text = board.title
+            cell.nameLabel.text = "\(board.writer.displayName) •"
+            cell.dayLabel.text = "\(board.createdDateTime) •"
+            cell.viewsLabel.text = "\(board.viewCount)"
+            
+            cell.clipImage.isHidden = board.attachmentsCount == 0
+            cell.newBadgeImage.isHidden = !board.isNewPost
             
             return cell
         }
