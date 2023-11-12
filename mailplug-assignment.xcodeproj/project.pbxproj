@@ -39,6 +39,7 @@
 		1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED112B010E9C0036BD1D /* APIConstants.swift */; };
 		1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED132B010F480036BD1D /* APIRouter.swift */; };
 		1CB2ED162B0118770036BD1D /* GeneralBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */; };
+		1CB2ED182B01199D0036BD1D /* GeneralBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED172B01199D0036BD1D /* GeneralBoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		1CB2ED112B010E9C0036BD1D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		1CB2ED132B010F480036BD1D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardTableViewCell.swift; sourceTree = "<group>"; };
+		1CB2ED172B01199D0036BD1D /* GeneralBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				1C72CB822AFCCB18002DA0D7 /* SearchViewModel.swift */,
+				1CB2ED172B01199D0036BD1D /* GeneralBoardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB2ED182B01199D0036BD1D /* GeneralBoardViewModel.swift in Sources */,
 				1C380F6C2AF8DB640036A2D1 /* IconImage.swift in Sources */,
 				1C380F652AF8B01A0036A2D1 /* GeneralBoardViewController.swift in Sources */,
 				1C72CB832AFCCB18002DA0D7 /* SearchViewModel.swift in Sources */,
