@@ -38,6 +38,7 @@
 		1C72CB922AFE32CB002DA0D7 /* EmptySearchRecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */; };
 		1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED112B010E9C0036BD1D /* APIConstants.swift */; };
 		1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED132B010F480036BD1D /* APIRouter.swift */; };
+		1CB2ED162B0118770036BD1D /* GeneralBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchRecentView.swift; sourceTree = "<group>"; };
 		1CB2ED112B010E9C0036BD1D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		1CB2ED132B010F480036BD1D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				1C380F672AF8B8EF0036A2D1 /* GeneralBoardView.swift */,
 				1C72CB8D2AFE3092002DA0D7 /* EmptyBoardView.swift */,
+				1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */,
 				1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */,
 				1C72CB802AFCB9AF002DA0D7 /* SearchResultDTO.swift in Sources */,
+				1CB2ED162B0118770036BD1D /* GeneralBoardTableViewCell.swift in Sources */,
 				1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */,
 				1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */,
 				1C72CB892AFD1ABC002DA0D7 /* EmptyView.swift in Sources */,
