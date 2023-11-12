@@ -37,6 +37,7 @@
 		1C72CB902AFE3253002DA0D7 /* EmptySearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB8F2AFE3253002DA0D7 /* EmptySearchResultView.swift */; };
 		1C72CB922AFE32CB002DA0D7 /* EmptySearchRecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */; };
 		1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED112B010E9C0036BD1D /* APIConstants.swift */; };
+		1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED132B010F480036BD1D /* APIRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		1C72CB8F2AFE3253002DA0D7 /* EmptySearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchResultView.swift; sourceTree = "<group>"; };
 		1C72CB912AFE32CB002DA0D7 /* EmptySearchRecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchRecentView.swift; sourceTree = "<group>"; };
 		1CB2ED112B010E9C0036BD1D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		1CB2ED132B010F480036BD1D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB2ED112B010E9C0036BD1D /* APIConstants.swift */,
+				1CB2ED132B010F480036BD1D /* APIRouter.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				1C380F7F2AF91DB90036A2D1 /* Typography.swift in Sources */,
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
 				1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */,
+				1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */,
 				1C72CB802AFCB9AF002DA0D7 /* SearchResultDTO.swift in Sources */,
 				1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */,
 				1C380F9C2AFA10800036A2D1 /* MenuModalTableViewCell.swift in Sources */,
