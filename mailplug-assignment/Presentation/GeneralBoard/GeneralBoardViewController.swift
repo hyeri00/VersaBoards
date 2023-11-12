@@ -11,6 +11,22 @@ class GeneralBoardViewController: UIViewController {
     
     private let generalBoardView = GeneralBoardView()
     
+    // MARK: - UI
+    
+    private let emptyStateView: EmptyBoardView = {
+        let view = EmptyBoardView()
+        return view
+    }()
+    
+    private let tableView: UITableView = {
+        let view = UITableView()
+        view.rowHeight = 74
+        view.backgroundColor = .white
+        view.register(GeneralBoardTableViewCell.self,
+                      forCellReuseIdentifier: "GeneralBoardTableViewCell")
+        return view
+    }()
+    
     // MARK: - Life Cycles
     
     override func loadView() {
