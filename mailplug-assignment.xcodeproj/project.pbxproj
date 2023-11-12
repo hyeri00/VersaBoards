@@ -40,6 +40,7 @@
 		1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED132B010F480036BD1D /* APIRouter.swift */; };
 		1CB2ED162B0118770036BD1D /* GeneralBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */; };
 		1CB2ED182B01199D0036BD1D /* GeneralBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED172B01199D0036BD1D /* GeneralBoardViewModel.swift */; };
+		1CB2ED1A2B0119F00036BD1D /* BoardPostDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2ED192B0119F00036BD1D /* BoardPostDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		1CB2ED132B010F480036BD1D /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		1CB2ED152B0118770036BD1D /* GeneralBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardTableViewCell.swift; sourceTree = "<group>"; };
 		1CB2ED172B01199D0036BD1D /* GeneralBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBoardViewModel.swift; sourceTree = "<group>"; };
+		1CB2ED192B0119F00036BD1D /* BoardPostDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardPostDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				1C72CB7F2AFCB9AF002DA0D7 /* SearchResultDTO.swift */,
+				1CB2ED192B0119F00036BD1D /* BoardPostDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				1C380F542AF8AEC40036A2D1 /* ViewController.swift in Sources */,
 				1C72CB8E2AFE3092002DA0D7 /* EmptyBoardView.swift in Sources */,
 				1CB2ED142B010F480036BD1D /* APIRouter.swift in Sources */,
+				1CB2ED1A2B0119F00036BD1D /* BoardPostDTO.swift in Sources */,
 				1C72CB802AFCB9AF002DA0D7 /* SearchResultDTO.swift in Sources */,
 				1CB2ED162B0118770036BD1D /* GeneralBoardTableViewCell.swift in Sources */,
 				1CB2ED122B010E9C0036BD1D /* APIConstants.swift in Sources */,
