@@ -86,4 +86,55 @@ class GeneralBoardTableViewCell: UITableViewCell {
         view.distribution = .fillProportionally
         return view
     }()
+    
+    // MARK: - Initialize
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configure
+    
+    private func configure() {
+        self.backgroundColor = .white
+        self.selectionStyle = .none
+        
+        makeConstraints()
+    }
+    
+    private func makeConstraints() {
+        self.addSubview(self.titleLabel)
+        self.addSubview(self.badgeStackView)
+        self.addSubview(self.subStackView)
+        self.addSubview(self.viewsStackView)
+        
+        self.titleLabel.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
+            $0.leading.equalTo(20)
+        }
+        self.badgeStackView.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(20)
+            $0.leading.equalTo(titleLabel.snp.trailing).offset(10)
+        }
+        
+        self.subStackView.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(50)
+            $0.leading.equalTo(20)
+        }
+        
+        self.viewsStackView.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(50)
+            $0.leading.equalTo(subStackView.snp.trailing).offset(10)
+        }
+        
+        self.viewsImage.snp.makeConstraints {
+            $0.width.height.equalTo(16)
+        }
+    }
 }
