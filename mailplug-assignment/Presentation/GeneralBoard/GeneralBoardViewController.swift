@@ -43,6 +43,9 @@ class GeneralBoardViewController: UIViewController {
     }
     
     private func configure() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         self.makeConstraints()
     }
     
@@ -95,4 +98,24 @@ class GeneralBoardViewController: UIViewController {
         searchVC.modalPresentationStyle = .overFullScreen
         self.present(searchVC, animated: true)
     }
+}
+
+extension GeneralBoardViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+            return 1
+        }
+    
+    
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GeneralBoardTableViewCell",
+                                                     for: indexPath) as! GeneralBoardTableViewCell
+            
+            return cell
+        }
 }
