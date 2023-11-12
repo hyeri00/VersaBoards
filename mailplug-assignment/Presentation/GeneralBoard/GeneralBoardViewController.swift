@@ -38,7 +38,26 @@ class GeneralBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure()
         setNavigationBar()
+    }
+    
+    private func configure() {
+        self.makeConstraints()
+    }
+    
+    private func makeConstraints() {
+        self.view.addSubview(self.emptyStateView)
+        self.view.addSubview(self.tableView)
+        
+        self.emptyStateView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+        self.tableView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(15)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
     }
     
     private func setNavigationBar() {
